@@ -1,38 +1,68 @@
-.App {
+* {
+  margin: 0;
+}
+
+.app {
+  background-color: #fafafa;
+}
+
+.app-header {
+  list-style-type: none;
+  overflow: hidden;
+
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header li {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  color: #E96245;
+  font-family: "Franklin Gothic Medium";
+}
+
+.sign-out, .sign-in button {
+	background: rgba(255, 255, 255, 0);
+  border: none;
+  font-family: "Verdana";
+  font-size: 1.2em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sign-in {
+  height: 91vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-in div {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sign-in div * {
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.post-feed {
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.post-form {
+  box-sizing: border-box;
+  max-width: 30%;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post-form input {
+  width: 100%;
 }
