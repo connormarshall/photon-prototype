@@ -26,10 +26,13 @@
 .logo {
   display: flex;
   color: #E96245;
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "Franklin Gothic Medium";
 }
 
-.sign-out, .sign-in button {
+.sign-in button {
 	background: rgba(255, 255, 255, 0);
   border: none;
   font-family: "Verdana";
@@ -47,14 +50,24 @@
 
 .sign-in div {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.sign-in div * {
-  padding: 10px;
+.sign-in div * {padding: 10px;}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.sign-in p {color: #555;}
 
 .post-feed {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .post-form {
